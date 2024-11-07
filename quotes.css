@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merienda:wght@300..900&family=Playwrite+RO:wght@100..400&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('images/forest3.jpg'); /* Set your background image */
+    background-size: cover;
+    background-position: center;
+    font-optical-sizing: auto;
+}
+h3{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 30px;
+}
+.quote {
+    color: #fff;
+    margin-bottom: 20px;
+    /* color: black; */
+}
+
+.quote-divider {
+    width: 80%; /* Adjust the width as needed */
+    border: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.5); /* Transparent white line */
+    margin: 20px auto; /* Center the line */
+    opacity: 0.8;
+    /* margin-bottom: 15px; */
+}
+
+/* Optional: Add hover effect for visual interest */
+.quote-divider:hover {
+    border-top: 2px solid #fff; /* Change color on hover */
+    transition: border-color 0.3s ease;
+}
+
+
+/* Hover effect on container */
+.container:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/* Styles for other elements */
+.header h1 {
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+#search-input {
+    width: 50%;
+    padding: 10px;
+    border-radius: 0px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: cursive;
+ 
+}
+
+.quote p, .author p {
+    /* font-family: 'Georgia', serif; */
+    font-family: cursive;
+    color: #fff;
+}
+#tweet-quote{
+    padding: 10px 20px;
+    background-color: #0282cc;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: cursive;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+#tweet-quote:hover {
+    background-color:#0282cc;
+    color: #fff;
+    box-shadow: 0 0 15px 5px rgba(36, 36, 36, 0.6); /* Green glow effect */
+}
+#new-quote {
+    padding: 10px 20px;
+    background-color: #329000;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: cursive;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+
+/* Hover effect with glow */
+#new-quote:hover {
+    background-color: #329000;
+    color: #fff;
+    box-shadow: 0 0 15px 5px rgba(36, 36, 36, 0.6); /* Green glow effect */
+}
+
+/* Positioning and styling the search container */
+.search-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    background-color: transparent; /* Transparent background */
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255); /* Underline effect */
+    padding: 8px;
+    margin-left: 250px;
+    color: #fff;
+    outline: none;
+    width: 180px; /* Adjust width as needed */
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+/* Hover effect for input underline */
+#search-input:hover, #search-input:focus {
+    border-bottom: 1px solid #fff; /* Change underline color on hover/focus */
+}
+
+.search-icon {
+    color: rgba(255, 255, 255, 0.7); /* Icon color */
+    margin-left: -25px; /* Position icon inside the input */
+    pointer-events: none; /* Prevent icon from blocking input */
+}
+.container {
+    color: #fff;
+    font-family: "Merienda", cursive;
+    position: relative; /* Ensure absolute positioning of search container works */
+    background: rgba(39, 39, 39, 0.443); /* Semi-transparent background from the first container */
+    border-radius: 25px;
+    padding: 20px;
+    max-width: 500px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Apply blur effect for both containers */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effect for transform and shadow */
+
+}
